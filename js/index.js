@@ -1,0 +1,19 @@
+$(document).ready(function(){
+  $("span").hover(function(){
+    $(this)
+      .addClass("on")
+      .next()
+      .addClass("side")
+      .next()
+      .addClass("side2");
+    $(this)
+      .prev()
+      .addClass("side")
+      .prev()
+      .addClass("side2");
+  }, function() {
+    $("span").removeClass("on");
+    $("span").removeClass("side");
+    $("span").removeClass("side2");
+  });
+});
